@@ -1,5 +1,9 @@
 
 
-const click_item_header = document.querySelector(".item-header_insite");
 
-onclick
+// Show nội dung header ẩn
+$(document).ready(function(){
+    $("#header_down").click(function(){
+      $(".header_insite").slideToggle("slow");
+    });
+});
