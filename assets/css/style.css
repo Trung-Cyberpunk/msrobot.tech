@@ -370,4 +370,124 @@ body{
 }
 
 
-/*  */
+/* main content */
+
+
+.main-content{
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.header-main{
+    display: flex;
+    width: 100%;
+    padding: 0 ;
+    height: auto;
+    /* align-items: center;  */
+}
+
+.source_code{
+    position: relative;
+    text-align: center;
+    width: 60%;
+    height: auto;
+}
+
+.source_code img{
+    position: absolute;
+    right: -93px;
+    width: 112%;
+    height: auto;
+    top: 3rem;
+    /* object-fit: cover; */
+}
+
+#source_code{
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 4.2rem;
+    color: var(--item-color);
+}
+/* .box-main_code{
+    width: 40%;
+} */
+
+.box_code{
+    margin-top: 6.6rem;
+    margin-left: 2rem;
+}
+.box_main{
+    width: 550px;
+    height: auto;
+    /* border: 1px solid #b8b6b6;   */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 3rem;
+    background-color: var(--bg-color);
+}
+
+.box_main #box-main_title{
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    color: var(--item-color);
+    opacity: 0.8;
+}
+
+.box_main .free{
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    color: #EC5252;
+}
+.box_main > hr{
+    width:  90px;
+    height: 4px;
+    background-color: var(--item-color);
+}
+
+.box_main .title_list{
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 4rem;
+}
+
+.box-list {
+    width: 100%;
+    height: auto;
+}
+
+.box-list .box-item_list{
+    display: flex;
+    align-items: center;
+    /* padding-bottom: 1rem;
+    ư */
+}
+
+
+.box-list .box-item_list #img-list{
+    width: 1.2rem;
+}
+.box-list .box-item_list #title-list{
+    font-weight: 450;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+
+.box_main .btn-list{
+    width: 100%;
+    height: 65px;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--bg-color);
+    border: none;
+    border-radius: 5px;
+    background-color: #EC5252;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;  
+}
+
+.box_main .btn-list:hover{
+    cursor: pointer;
+    background-color: rgba(236, 82, 82, 0.6);
+    font-size: 1.5rem;
+}
