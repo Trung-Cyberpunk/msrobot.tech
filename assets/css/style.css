@@ -376,6 +376,7 @@ body{
 .main-content{
     width: 100%;
     margin-top: 5rem;
+    padding-bottom: 10rem;
 }
 
 .header-main{
@@ -417,7 +418,7 @@ body{
     margin-left: 2rem;
 }
 .box_main{
-    width: 550px;
+    width: 55 0px;
     height: auto;
     /* border: 1px solid #b8b6b6;   */
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -490,4 +491,58 @@ body{
     cursor: pointer;
     background-color: rgba(236, 82, 82, 0.6);
     font-size: 1.5rem;
+}
+
+/* main_box */
+.main-item{
+    width: 100%;
+
+}
+
+.main-item_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item_box{
+    width: 45%;
+    height: auto;
+    padding-bottom: 7rem;
+}
+
+.item_box > img{
+    width: 11rem;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.item_box #box_title{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 1.2rem;
+    color: var(--item-color);
+}
+
+.item_box > ul{
+    font-size: 1.5rem;
+    opacity: 0.6;
+}
+
+.item_box > ul > .item_title{
+    margin-bottom: 1.2rem;
+}
+.item_box .item_title::before{
+    content: "\2713";
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    font-weight: bold;
+    color: rgba(255, 100, 0, 1);
+}
+#download{
+    display: block;
+   color: rgba(255, 100, 0, 1);
+   padding: 1rem 1.7rem;
 }
