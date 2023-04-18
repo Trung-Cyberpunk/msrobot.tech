@@ -3,6 +3,7 @@
  
 body{
     position: relative;
+
 }
 :root{
     --bg-color: #fff;
@@ -12,9 +13,9 @@ body{
 }
 
 
+
 .wapper{
     position: absolute;
-    top: 10.7rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -24,13 +25,13 @@ body{
 .login{
     display: none;
 }
-/* .active{
+.active{
     display: block;
-} */
+}
 
 .login{
     position: relative;
-    margin-top:5rem;
+    margin-top: 2rem;
     width: 35rem;
     height: auto;
     background-color: var(--bg-color);
@@ -115,13 +116,24 @@ body{
     line-height: 3.5rem;
 }
 .login_end > p{
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 450;
 }
 .login_end > span{
     font-weight: 450;
     font-size: 1.3rem;
 }
+#passwork_rs{
+    font-size: 1rem;
+}
+#passwork_rs:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
 
+.login_end > span > a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 /* login */

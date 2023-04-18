@@ -50,6 +50,12 @@ body{
     --black--color: black;
 }
 
+.opacity{
+    filter: brightness(70%);
+    background: rgba(0, 0, 0, 0.4); 
+    transition: opacity 0.3s ease-in-out;   
+}
+
 .active{
     color: var(--item-color);
 }
