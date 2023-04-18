@@ -21,14 +21,14 @@ body{
     align-items: center;
 }
 
-.login{
+/* .reset_pw{
     display: none;
-}
+} */
 /* .active{
     display: block;
 } */
 
-.login{
+.reset_pw{
     position: relative;
     margin-top:5rem;
     width: 35rem;
@@ -39,7 +39,7 @@ body{
 }
 
 
-.top-login{
+.top-reset_pw{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,7 +47,7 @@ body{
     padding: 1rem;
 
 }
-.top-login > h3{
+.top-reset_pw > h3{
     font-weight: 450;
     font-size: 1.4rem;
     /* line-height: 1.5rem; */
@@ -55,26 +55,26 @@ body{
 
 
 
-.top-login #btn_y{
+.top-reset_pw #btn_y{
     font-size: 3rem;
     font-weight: inherit;
     opacity: 0.6;
 }
 
-.top-login #btn_y:hover{
+.top-reset_pw #btn_y:hover{
     cursor: pointer;
 }
-.item-login{
+.item-reset_pw{
     width: 100%;
     height: auto;
     padding: 1.5rem;
 }
-.item-login .box-login{
+.item-reset_pw .box-reset_pw{
     width: 100%;
     position: relative;
 }
 
-.item-login .box-login #box_{
+.item-reset_pw .box-reset_pw #box_{
     width: 100%;
     height: 3.5rem;
     font-size: 1.4rem;
@@ -86,14 +86,14 @@ body{
     box-shadow: inset 0px 1px 2px rgba(102, 113, 123, 0.21);
     border-radius: 3px;
 }
-.box-login > #icon{
+.box-reset_pw > #icon{
     position: absolute;
     left: 0;
     font-size: 1.5rem;
     opacity: 0.6;
     padding: 1rem;
 }
-#btn_login{
+#btn_reset_pw{
     width: 100%;
     height: 60px;
     border: none;
@@ -103,25 +103,25 @@ body{
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-#btn_login:hover{
+#btn_reset_pw:hover{
     cursor: pointer;
     background-color: var(--bg-color);
     border: solid var(--item-color) 3px;
     color: var(--item-color);
 }
-.login_end{
+.reset_pw_end{
     display: block;
     text-align: center;
     line-height: 3.5rem;
 }
-.login_end > p{
+.reset_pw_end > p{
     font-size: 0.8rem;
     font-weight: 450;
 }
-.login_end > span{
+.reset_pw_end > span{
     font-weight: 450;
     font-size: 1.3rem;
 }
 
 
-/* login */
+/* reset_pw */
