@@ -18,7 +18,10 @@
 <body>
     <div class="backgr">
         <header class="header">
-            <img id="logo-item" src="assets/img/Logo.png" alt="Ảnh Logo" class="logo">
+            
+            <a href="/msrobot.tech/home.html">
+                <img id="logo-item" src="assets/img/Logo.png" alt="Ảnh Logo" class="logo">
+            </a> 
             <nav id="nav">
                 <ul class="item-header">
                     <li id="home"><a href="#" class="active">Home</a></li>
@@ -36,10 +39,17 @@
                     </li>
                 </ul>
                 <img id="img-header" src="/msrobot.tech/assets/img/canada_tpl.png" alt="">
+
                 <div class="btn-header">
                     <button class="btn" id="btn-header_login">Login</button>
                     <button class="btn" id="btn-header_signUp">Sign up</button>
                 </div>
+
+                    <!-- <div class="btn-header">
+                        <button class="btn" id="btn-header_login">Login</button>
+                        <button class="btn" id="btn-header_signUp">Sign up</button>
+                    </div> -->
+                
             </nav>
         </header>
     
@@ -476,31 +486,31 @@
                 <h3>Sign Up and Start Learning!</h3>
                 <a id ="btn_x" class='bx bx-x'></a>
             </div>
-            <div class="item-signUp">
+            <form class="item-signUp" action="/msrobot.tech/login_email.html">
                 <div class="box-sign">
-                    <input id="box_" type="index" placeholder="Email">
+                    <input id="box_" type="index" placeholder="Email" required>
                     <i id="icon" class='bx bx-envelope'></i>
                 </div>
                 <div class="box-sign">
-                    <input id="box_" type="index" placeholder="Passwork">
+                    <input id="box_" type="index" placeholder="Passwork"required>
                     <i id="icon" class='bx bx-lock' ></i>
                 </div>
                 <div class="box-sign">
-                    <input id="box_" type="index" placeholder="Verify password">
+                    <input id="box_" type="index" placeholder="Verify password"required>
                     <i id="icon" class='bx bx-lock' ></i>
                 </div>
                 <span id="note">Please use this email & password to login our Demo Sites when using Selenium Test Automation.</span>
                 <div id="check">
-                    <input id="myCheckbox" type="checkbox">
+                    <input id="myCheckbox" type="checkbox" required>
                     <label for="myCheckbox">Yes! I want to receive emails with Selenium Tips and ebook!</label>
                 </div>
-                <button id="btn_sign">Sign Up</button>
+                    <button id="btn_sign">Sign Up</button>
                 <div class="sign_end">
                     <p>By signing up, you agree to our <strong style="color: rgba(7, 68, 242, 1)">Terms of Use</strong> and <strong style="color: rgba(7, 68, 242, 1)">Privacy Policy.</strong>   </p>
                     <hr style="width: 100%; height: 1px">
                     <span>Already have an account? <a id="login_a" href="#" style="color: rgba(7, 68, 242, 1); font-weight: 600;">Log In</a></span>
                 </div>
-            </div>
+            </form>
         </div>
 
         <div class="login">
@@ -508,22 +518,22 @@
                 <h3>Forgot password</h3>
                 <a id ="btn_y" class='bx bx-x'></a>
             </div>
-            <div class="item-login">
+            <form class="item-login" method="post" action="home.html">
                 <div class="box-login">
-                    <input id="box_" type="index" placeholder="Email">
+                    <input id="box_" type="index" placeholder="Email" name="email" required>
                     <i id="icon" class='bx bx-envelope'></i>
                 </div>
                 <div class="box-login">
-                    <input id="box_" type="index" placeholder="Passwork">
-                    <i id="icon" class='bx bx-lock' ></i>
+                    <input id="box_" type="index" placeholder="Passwork" name="passwork" required>
+                    <i id="icon" class='bx bx-lock'></i>
                 </div>      
-                <button id="btn_login">Login</button>
+                <button id="btn_login" name="login">Login</button>
                 <div class="login_end">
                     <p>Or <a id="passwork_rs" style="color: rgba(7, 68, 242, 1)">Forgot password</a></p>
                     <hr style="width: 100%; height:1px">
                     <span>Don't have an account?<a id="sign_a" href="#" style="color: rgba(7, 68, 242, 1); font-weight: 600;"> Sign up</a></span>
                 </div>
-            </div>
+            </form>
         </div>
 
         <div class="reset_pw">
@@ -531,7 +541,7 @@
                 <h3>Log in to your <strong style="color: rgba(7, 68, 242, 1);">Ms.Robot</strong>  account!</h3>
                 <a id ="btn_z" class='bx bx-x'></a>
             </div>
-            <div class="item-reset_pw">
+            <form class="item-reset_pw" method="post">
                 <div class="box-reset_pw">
                     <input id="box_" type="index" placeholder="Email">
                     <i id="icon" class='bx bx-envelope'></i>
@@ -543,7 +553,7 @@
                 <div class="reset_pw_end">
                     <span>Or <a id="login_rs" style="color: rgba(7, 68, 242, 1); font-weight: 600;"> Login</a></span>
                 </div>
-            </div>
+            </form>
         </div>
 
         <div class="reset_pw_2">
@@ -583,21 +593,45 @@
                     <span>How do you feel about our website?</span>
 
                     <div id="img_icon_1">
-                        <img src="/msrobot.tech/assets/img/angry1_1.png" alt="Sad" class="feedback-img" value="1">
-                        <img src="/msrobot.tech/assets/img/angry1_2.png" alt="Sad" class="feedback-img" value="2">
-                        <img src="/msrobot.tech/assets/img/angry1_3.png" alt="Sad" class="feedback-img" value="3">
-                        <img src="/msrobot.tech/assets/img/angry1_4.png" alt="Sad" class="feedback-img" value="4">
-                        <img src="/msrobot.tech/assets/img/angry1_5.png" alt="Sad" class="feedback-img" value="5">
+                        <div class="container_icon">
+                            <img src="/msrobot.tech/assets/img/angry1_1.png" alt="Sad" class="feedback-img" value="1">
+                            <img src="/msrobot.tech/assets/img/angry1.png" alt="Sad" class="feedback-img_2" value="1">
+                            <span class="title_icon">Bad</span>
+                        </div>
+                        <div class="container_icon">   
+                            <img src="/msrobot.tech/assets/img/angry2_2.png" alt="Sad" class="feedback-img" value="2">
+                            <img src="/msrobot.tech/assets/img/angry2.png" alt="Sad" class="feedback-img_2" value="2">
+                            <span class="title_icon">Rather</span>
+                        </div>
+                        <div class="container_icon">   
+                            <img src="/msrobot.tech/assets/img/angry3_3.png" alt="Sad" class="feedback-img" value="3">
+                            <img src="/msrobot.tech/assets/img/angry3.png" alt="Sad" class="feedback-img_2" value="3">
+                            <span class="title_icon">Good</span>
+                        </div>
+                        
+                        <div class="container_icon">   
+                            <img src="/msrobot.tech/assets/img/angry4_4.png" alt="Sad" class="feedback-img" value="4">
+                            <img src="/msrobot.tech/assets/img/angry4.png" alt="Sad" class="feedback-img_2" value="4">
+                            <span class="title_icon selected">Very good</span>
+                        </div>
+                        <div class="container_icon">   
+
+                            <img src="/msrobot.tech/assets/img/angry5_5.png" alt="Sad" class="feedback-img" value="5">
+                            <img src="/msrobot.tech/assets/img/angry5.png" alt="Sad" class="feedback-img_2" value="5">
+                            <span class="title_icon">Excellent</span>
+                        </div>
+
                     </div>
-                    
-                    <div id="img_icon_2">
+
+
+                    <!-- <div id="img_icon_2">
                         <img src="/msrobot.tech/assets/img/angry1.png" alt="Sad" class="feedback-img" value="1">
                         <img src="/msrobot.tech/assets/img/angry2.png" alt="Sad" class="feedback-img" value="2">
                         <img src="/msrobot.tech/assets/img/angry3.png" alt="Sad" class="feedback-img" value="3">
                         <img src="/msrobot.tech/assets/img/angry4.png" alt="Sad" class="feedback-img" value="4">
                         <img src="/msrobot.tech/assets/img/angry5.png" alt="Sad" class="feedback-img" value="5">
 
-                    </div>
+                    </div> -->
                 </div>
 
                 <span id="fb_title">How like are you to recommend our company/product/service to your friends and colleagues?</span>

@@ -20,14 +20,13 @@ body{
     transform: scale(1);
 }
 
-
 .fb_icon{
     position: absolute;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 20rem;
+    top: 15rem;
 }
 
 .container_feedback{
@@ -59,9 +58,6 @@ body{
 }
 .main_feedback{
     padding: 1.7rem;
-    display: flex;
-    flex-direction: column;
-
 }
 
 .main_feedback .feel_feedback{
@@ -73,9 +69,44 @@ body{
     padding-top: 0.5rem;
 
 }
-.feel_feedback #img_icon_1 > img{
-    padding-right: 1.7rem;
+#img_icon_1{
+    display: flex;
+    justify-content: space-around;
 }
+
+
+.container_icon{
+    margin-left: 1rem;
+    padding: 0.8rem 0 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
+
+.title_icon{
+    visibility: hidden;
+    margin-top: 0.5rem;
+} 
+
+.selected .title_icon{
+    visibility: visible;
+}
+
+.selected .feedback-img{
+    z-index: 0;
+}
+.feedback-img{
+    z-index: 2;
+    cursor: pointer;
+    background-color: var(--bg-color);
+}
+
+.feedback-img_2{
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
 .feel_feedback #img_icon_2 > img{
     padding-right: 1.7rem;
     filter: grayscale(0.9);
