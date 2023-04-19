@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/msrobot.tech/assets/css/tutorials.css">
     <link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Home</title>
+    <title>Tutorials</title>
 </head>
 <body>
     <div class="backgr">
@@ -25,10 +25,10 @@
             </a> 
             <nav id="nav">
                 <ul class="item-header">
-                    <li id="home"><a href="#" class="active">Home</a></li>
-                    <li id="tutorial"><a href="#">Tutorial</a></li>
-                    <li id="forum"><a href="#">Forum</a></li>
-                    <li id="blog"><a href="#">Blog</a></li>
+                    <li id="home"><a href="home.html">Home</a></li>
+                    <li id="tutorial"><a href="tutorials.html"class="active">Tutorial</a></li>
+                    <li id="forum"><a href="forum.html">Forum</a></li>
+                    <li id="blog"><a href="blogs.html">Blog</a></li>
                     <li id="demo_sites" >
                         <a id="header_down" href="#"style="width: 6rem">Demo Sites</a>
                         <ul class="header_insite">
@@ -51,10 +51,10 @@
                         <button class="btn" id="btn-header_signUp">Sign up</button>
                     </div> -->
                 
-            </nav>
+            </nav>,
         </header>
         
-        <div class="title_tutorials">
+        <div class="title_box">
             <h1>TUTORIALS</h1>
         </div>
     
@@ -241,29 +241,76 @@
                         <div class="container_blog">
                             <h3>Download Java: </h3>
                             <span>
-                                Latest java version: <a href="https://www.java.com/en/download/windows-64bit.jsp">https://www.java.com/en/download/windows-64bit.jsp</a> 
+                                Latest java version: <a href="https://www.java.com/en/download/windows-64bit.jsp" style="color: rgba(75, 145, 249, 1);">https://www.java.com/en/download/windows-64bit.jsp</a> 
                             </span>
                             <br>
                             <span>Following the Instruction from Java to install. Then set up JAVA_HOME environment variable by these steps </span>
                             <br>
-                            <span style="font-size: 1rem;">- Open Control Panel\System and Security\System on your computer</span>
+                            <span style="font-size: 1.1rem;">- Open Control Panel\System and Security\System on your computer</span>
                             <br>
                             <img src="/msrobot.tech/assets/img/tutorials/container_2_2.png" alt="">
                             <br>
-                            <span style="font-size: 1rem;">- Choose Advance system setting</span>
+                            <span style="font-size: 1.1rem;">- Choose Advance system setting</span>
                             <br>
                             <img src="/msrobot.tech/assets/img/tutorials/container_2_3.png" alt="">
                             <br>
-                            <span style="font-size: 1rem;">- Click on Environment Variables</span>
+                            <span style="font-size: 1.1rem;">- Click on Environment Variables</span>
                             <img src="/msrobot.tech/assets/img/tutorials/container_2_4.png" alt="">
                             <br>
-                            <span style="font-size: 1rem;">- Click on Environment Variables</span>
+                            <span style="font-size: 1.1rem;">- Select Path under System variables and click on Edit</span>
                             <img src="/msrobot.tech/assets/img/tutorials/container_2_5.png" alt="">
                             <br>
+
+                            <span  style="font-size: 1.1rem;">
+                                - At the end of Variable value, put path where is Java\Bin folder such as 
+                                <strong>C:\Program Files (x86)\Java\jre1.8.0_91\bin</strong> 
+                            </span>
+                            <br>
+                            <span  style="font-size: 1.1rem;">
+                                - Then click on OK. Make sure you don’t remove any existing Variable value. 
+                            </span>
+                            <br>
+                            <span>
+                                <Strong>Download Jmeter:</Strong>
+                                <a href="http://Jmeter.apache.org/download_Jmeter.cgi" style="color: rgba(75, 145, 249, 1);">
+                                    http://Jmeter.apache.org/download_Jmeter.cgi
+                                </a>
+                            </span>
+                            <br>
+                            <span>
+                                - To install Jmeter, simply unzip the zip/tar 
+                                file into the directory where you want Jmeter to be installed (zip file is for Window, tar file is for Unix). 
+                                Make sure that you have a JRE/JDK correctly installed and the JAVA_HOME environment variable set.
+                            </span>
+                            <br>
+                            <span>
+                                <strong>To run Jmeter:</strong>
+                                run the Jmeter.bat (for Windows) or Jmeter (for Unix) file. These files are found in the bin directory.
+                            </span>
+                            <br>
+                            <h3>Jmeter Test Plan: Basic Elements (Thread Group, Sampler, Assertion, Listener)</h3>
+                            <br>
+                            <span>
+                                <strong>Thread group:</strong>
+                                is to set up number of user to run the test.
+                            </span>
+                            <br>
+                            <span>
+                                <strong>Sampler:</strong>
+                                is the request for running the test (http/https/soap/rest).
+                            </span>
+                            <br>
+                            <span>
+                                <strong>Assertions:</strong>
+                                are to use for comparing the actual result with the expected result so that we can decide if the test is passed.
+                            </span>
+                            <br>
+                            <span>
+                                <strong>Listeners:</strong>
+                                are the reports from Jmeter.
+                            </span>
+                            <br>
                         </div>
-
-
-
                     </div>
                 </div>
                 <div class="tutorial_container_3">
