@@ -126,15 +126,21 @@
 }
 
 .qs_item-box{
-    padding: 0 6rem;
-    align-items: center;
+    display: flex;
+    /* padding: 1.7rem 1rem 0 1rem; */
+    /* align-items: center; */
     height: autp;
     background-color: #F5F7FF;
+    margin-bottom: 2rem;
+}
+
+.box_qs{
+    padding-top: 1.7rem;
 }
 
 .box_qs h3{
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     line-height: 2.3xrem;
     color: #0744F2;
 }
@@ -143,26 +149,123 @@
     display: block;
     padding: 1rem 0;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 2rem;
+    width: 95%;
 }
 .information{
     display: flex;
     justify-content: space-between;
-    opacity: 0.6;
 }
 
-.information span > strong{
-    opacity: 1;
+.information span{
+    font-weight: 300;
+    color: #A2A2A2;
 }
 .number_box{
-    position: absolute;
-    left: -1px;
+    width: 22%;
+    padding-top: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.number_box img{
+    margin-bottom: 1rem;
+    width: 3rem;
+}
+
+.number_box span{
+    color: var(--bg-color);
+    font-size: 1.2rem;
 }
 .information_qs{
-    position: absolute;
-    right: 1px;
-    top: 0;
+    width: 25%;
+    justify-content: flex-start;
+    align-self: center;
+    padding-right: 1.8rem;
+    /* position: absolute;
+    right: 7px;
+    top: 36px;; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.information_qs .votes > span{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: rgba(0, 188, 35, 1);
+}
+
+.information_qs .votes > p{
+    font-weight: 450;
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+
+.answers{
+    border: solid 1px var(--item-color);
+    margin-bottom: 1rem;
+    
+}
+.information_qs .answers > span{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: rgba(7, 68, 242, 1);
+}
+.information_qs .answers > p{
+    font-size: 1.2rem;
+    line-height: 3rem;
+    color: rgba(7, 68, 242, 1);
+}
+
+.information_qs > span{
+    font-size: 1rem;
+}
+
+/* Phân trang  */
+.paging{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.paging span{
+    font-size: 1.2rem;
+    color: rgba(151, 151, 151, 1);
+}
+
+.paging .paging_item:nth-child(1) a{
+    margin-right: 0.5rem;
+    /* opacity: 0.6; */
+}
+.paging .paging_item:nth-child(2) a{
+    margin-left: 0.5rem;
+    /* opacity: 0.5; */
+}
+.paging_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paging_item a{
+    display: inline;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    color: rgba(151, 151, 151, 1);
+    font-size: 1.5rem;
+    border: solid 2px rgba(151, 151, 151, 1);
+}
+
+.paging_item a:hover{
+    background-color: var(--item-color);
+    color: var(--bg-color);
+    border: none    ;
 }
 /*  */
 .question_content-total{
@@ -210,3 +313,5 @@
 .img_qa img{
     margin-bottom: 2rem;
 }
+
+
