@@ -105,6 +105,9 @@ body{
     color: var(--text-color);
     padding-bottom: 2.2rem;
 }
+.item-container{
+    width: 11rem;
+}
 
 .container_blog{
     padding-bottom: 1rem;
