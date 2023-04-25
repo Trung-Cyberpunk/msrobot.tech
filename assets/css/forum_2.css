@@ -67,9 +67,10 @@
 
 .information_2{
     font-weight: 450;
-    font-size: 1.2rem;
+    font-size: 1.2rem;  
     line-height: 2rem;
 }
 .information_2 span{
     margin-right: 2rem;
+    color: rgba(162, 162, 162, 1);
 }
