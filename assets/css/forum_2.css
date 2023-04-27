@@ -208,3 +208,12 @@
     font-size: 1.5rem;
 }
 
+
+.note-editor .note-toolbar{
+    background-color: var(--bg-color);
+}
+
+
+.note-editor .note-toolbar .note-btn-group{
+    background-color: var(--bg-color);
+}
