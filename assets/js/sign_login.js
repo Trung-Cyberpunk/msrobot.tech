@@ -5,6 +5,7 @@ const wapper_sign = document.querySelector(".signUp");
 const sign_close  = document.querySelector("#btn_x");
 const login_a  = document.querySelector("#login_a");
 const sign_a  = document.querySelector("#sign_a");
+const sign_ask = document.querySelector("#sign_ask");
 
 btn_signUp.onclick = () => {
     wapper_sign.classList.add("active");
@@ -28,7 +29,10 @@ sign_a.onclick = () =>{
     backgr.classList.add("opacity");
 }
 
-
+sign_ask.onclick = () => {
+    wapper_sign.classList.add("active");
+    backgr.classList.add("opacity");
+}
 
 
 // Login
