@@ -1,6 +1,7 @@
 const feedback_icon = document.querySelector(".fb_icon")
 
 const feedback_img = document.querySelector("#feedback-icon");
+const backgr = document.querySelector(".backgr");
 
 const remove_fb = document.querySelector("#btn_fb");
 
