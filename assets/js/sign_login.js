@@ -29,10 +29,10 @@ sign_a.onclick = () =>{
     backgr.classList.add("opacity");
 }
 
-sign_ask.onclick = () => {
-    wapper_sign.classList.add("active");
-    backgr.classList.add("opacity");
-}
+// sign_ask.onclick = () => {
+//     wapper_sign.classList.add("active");
+//     backgr.classList.add("opacity");
+// }
 
 
 // Login
