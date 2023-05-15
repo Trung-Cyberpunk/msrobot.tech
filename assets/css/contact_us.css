@@ -75,8 +75,9 @@
     transition: background-color ease-out 0.3s;
     font-size: 1.1rem;
     border:none;
+    transition: background-color ease-in 0.3s;
 }
 .sumbit_ctn:hover{
-
+    background-color: rgba(7, 68, 242, 0.7);
 }
 
