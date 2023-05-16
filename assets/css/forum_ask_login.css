@@ -73,4 +73,7 @@
     color: rgba(75, 145, 249, 1);
     border-color: rgba(75, 145, 249, 1);
 }
-  
+
+.sign_x{
+    display: block;
+}

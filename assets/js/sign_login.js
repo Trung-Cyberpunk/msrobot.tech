@@ -7,6 +7,8 @@ const login_a  = document.querySelector("#login_a");
 const sign_a  = document.querySelector("#sign_a");
 const sign_ask = document.querySelector("#sign_ask");
 
+const ask_login = document.querySelector("#sign_ask");
+
 btn_signUp.onclick = () => {
     wapper_sign.classList.add("active");
     wapper_login.classList.remove("active");
@@ -29,10 +31,14 @@ sign_a.onclick = () =>{
     backgr.classList.add("opacity");
 }
 
-// sign_ask.onclick = () => {
-//     wapper_sign.classList.add("active");
-//     backgr.classList.add("opacity");
-// }
+ask_login.onclick = () =>{
+    wapper_sign.classList.add("active");
+    wapper_login.classList.remove("active");
+    backgr.classList.add("opacity");
+}
+
+
+
 
 
 // Login

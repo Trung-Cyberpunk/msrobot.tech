@@ -15,10 +15,9 @@ body{
 }
 
 .container_blog strong,h3{
-    color: rgba(75, 145, 249, 1);
-
+    /* color: rgba(75, 145, 249, 1); */
+    color: var(--black--color);
 }
-
 
 .title_tutorials{
     width: 100%;

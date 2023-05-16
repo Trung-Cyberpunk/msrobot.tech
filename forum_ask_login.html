@@ -49,7 +49,7 @@
                     <li id="demo_sites" >
                         <a id="header_down" href="#"style="width: 6rem">Demo Sites</a>
                         <ul class="header_insite">
-                            <li id="item-header_insite"><a href="#">Basic Site</a></li>
+                            <li id="item-header_insite"><a href="basic_site_login.html">Basic Site</a></li>
                             <li id="item-header_insite"><a href="#">Automation Practice Site</a></li>
                             <li id="item-header_insite"><a href="#">Automation Actions Site</a></li>
                             <li id="item-header_insite"><a href="#">Ecommerce Site</a></li>
@@ -84,24 +84,23 @@
             opacity: 0.5;
             " >
 
-            <div class="login_ask">
+            <form class="login_ask" action="forum_qs_ask.html">
                 <h4>To login, provide your sign up email and password.
                     If you are not sign up yet, please 
-                    <a href="" style="cursor: pointer;">
-                        <strong id="sign_ask" style="color: rgba(255, 100, 0, 1);">
+                        <strong  id="sign_ask" style="cursor: pointer; color: rgba(255, 100, 0, 1);">
                         click here to signup ></strong>
-                    </a>
+
                 </h4>
                 <div class="box_ask-login">
-                    <label for="email_ask" class = "ask_after">Email: <strong style="color: rgba(210, 0, 13, 1);">*</strong></label>
+                    <label for="email_ask" class = "ask_after">Email: <strong style="color: rgba(210, 0, 13, 1);" required>*</strong></label>
                     <input type="text" id="email_ask" placeholder="thaole@yahoo.com">
                 </div>
                 <div class="box_ask-login">
-                    <label for="pw_ask" class = "ask_after">Passwords: <strong style="color: rgba(210, 0, 13, 1);">*</strong></label>
+                    <label for="pw_ask" class = "ask_after">Passwords: <strong style="color: rgba(210, 0, 13, 1);"required>*</strong></label>
                     <input type="text" id="pw_ask" placeholder="Enter">
                 </div>
                 <button class="btn_ask">Login</button>
-            </div>
+            </form>
         </div>  
 
        
@@ -168,7 +167,7 @@
 
     <!-- LOGIN -->
     <div class="wapper">
-        <div class="signUp">
+        <div class="signUp ">
             <div class="top-signUp">
                 <h3>Sign Up and Start Learning!</h3>
                 <a id ="btn_x" class='bx bx-x'></a>
@@ -279,6 +278,7 @@
     <script src="/msrobot.tech/assets/js/feedback.js"></script>
     <script src="/msrobot.tech/assets/js/forum.js"></script>
     <script src="assets/js/droop_qs.js"></script>
+    <script src="/msrobot.tech/assets/js/sign_box.js"></script>
 
 
 </body>
