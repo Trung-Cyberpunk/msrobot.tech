@@ -145,13 +145,14 @@ body{
     margin: 0;
     display: block;
     align-items: center;
+    line-height: 67px;
 }
 .header_insite{
     display: none;   
 }
 .header_insite #item-header_insite{ 
     width: 100%;
-    padding: 1.5rem 0;
+    /* padding: 1.5rem 0; */
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     cursor: pointer;
 }

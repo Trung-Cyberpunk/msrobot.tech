@@ -1,0 +1,48 @@
+
+@import url('https://fonts.cdnfonts.com/css/circular-std');
+ 
+body{
+    position: relative;
+    
+}
+:root{
+    --bg-color: #fff;
+    --item-color:#0744F2;
+    --special-color: #FF6400;
+    --black--color: black;
+}
+
+.automation{
+    padding: 6rem 7%;
+}
+
+.automation h2{
+    font-weight: 500;
+    font-size: 2.5em;
+    line-height: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+.automation p{
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+.automation_container{
+    width: 100%;
+    height: auto;
+}
+
+.automation_container h3{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin-top: 3rem;
+}
+.automation_container .site_box{
+    width: 100%;
+    height: 700px;
+    overflow: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 3rem;
+}

@@ -81,10 +81,143 @@ button.btn-ct:hover{
     font-size: 1.75rem;
 }
 
-.scroll{
+.form_rg{
+    width: 100%;
+}
+.form_rg h4{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.form_rg label{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.nameform{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.nameform input{
+    width: 20rem;
+    margin-right: 1rem;
+    height: 1.7rem;
+    padding: 10px;
+}
+
+.nameform label{
+    margin-right: 15rem;
+}
+
+.marital{
+    display: flex;
+    text-align: center;
+    margin-bottom: 5rem;    
+}
+.marital label{
+    margin-right: 15rem;
+}
+
+.marital .male{
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.marital .female{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.marital .orther{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.hoddy{
+    margin-bottom: 5rem;
+}
+.hoddy label:nth-child(1){
+    margin-right: 20rem;
+}
+
+.hoddy label{
     display: inline;
-    width: 200px;
-    height: 200px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 2rem;
+}
+
+.country{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-bottom: 5rem;
+}
+.country #country-select{
+    width: 100%;
+    height: 1.5rem;
+    opacity: 0.8;
+    margin-top: 0.7rem;
+}
+
+.your_email,.your_phone{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-bottom: 4rem;
+}
+.your_email input{
+    width: 100%;
+    height: 1.5rem;
+    margin-top: 0.5rem;
+}
+.your_phone input{
+    width: 100%;
+    height: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.choose_file{
+    margin-bottom: 5rem;
+}
+.choose_file form{
+    display: flex;
+    flex-direction: column;
+}
+.choose_file form label{
+    margin-bottom: 0.5rem;
+}
+
+.box-scroll{
+    margin-bottom: 5rem;
+}
+
+
+.scroll{
+    width: 250px;
+    height: 100px;
     border: 1px;
     overflow: auto;
+    border: 0.5px solid #666666;    
+    padding: 10px;
+    margin-top: 0.5rem;
+}
+.yourself{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+.yourself textarea{
+    height: 300px;
+    margin-top: 0.7rem;
+}
+
+.form_rg .btn_{
+    margin-top: 4rem;
+    width: 70px;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    border: 0.5px solid #666666;
+    background: #FFFFFF;
+    cursor: pointer;
+    padding: 2px;
 }

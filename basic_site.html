@@ -51,8 +51,8 @@
                         <a id="header_down" href="#"style="width: 6rem">Demo Sites</a>
                         <ul class="header_insite">
                             <li id="item-header_insite"><a href="basic_site_login.html">Basic Site</a></li>
-                            <li id="item-header_insite"><a href="#">Automation Practice Site</a></li>
-                            <li id="item-header_insite"><a href="#">Automation Actions Site</a></li>
+                            <li id="item-header_insite"><a href="automation_practice_site_login.html">Automation Practice Site</a></li>
+                            <li id="item-header_insite"><a href="automation_actions_site_login.html">Automation Actions Site</a></li>
                             <li id="item-header_insite"><a href="#">Ecommerce Site</a></li>
                         </ul>
                     </li>
@@ -163,29 +163,31 @@
                 </div>
 
                 <div class="form_rg">
+                    <h4>Registration Form</h4>
+
                     <div class="nameform">
-                        <h4>Your Name</h4>
+                        <label>Your Name (*)</label>
                         <input type="text" placeholder="FirstName">
                         <input type="text" placeholder="LastName">
                     </div>
 
                     <div class="marital">
                         <label>Marital Status</label>
-                        <label for="male">
+                        <label for="male" class="male">
                           <input type="radio" id="male" name="gender" value="male">
                           Single
                         </label>
-                        <label for="female">
+                        <label for="female" class="female">
                           <input type="radio" id="female" name="gender" value="female">
                           Married
                         </label>
-                        <label for="other">
+                        <label for="other" class="orther">
                           <input type="radio" id="other" name="gender" value="other">
                           Divorced
                         </label>
                     </div>
                     <div class="hoddy">
-                        <label>Hoddy</label>
+                        <label style="font-weight:700; font-size: 1.5rem;">Hoddy</label>
                         <label for="cooking">
                             <input type="checkbox" checked>
                             Cooking
@@ -226,7 +228,6 @@
                         <form>
                             <label for="file-upload">Your Profile Picture (required)</label>
                             <input type="file" id="file-upload" name="file-upload" placeholder="Choose File">
-                            <input type="submit" value="Tải lên">
                         </form>
                     </div>
 
@@ -242,6 +243,12 @@
                             <p>Switch Commands</p>
                         </div>
                     </div>
+                    <div class="yourself">
+                        <label for="yourself_a">About Yourself</label>
+                        <textarea name="" id="yourself_a" cols="30" rows="10" style="resize: none;"></textarea>
+                    </div>
+
+                    <button class="btn_">Submit</button>
                 </div>
             </div>
         </div>
