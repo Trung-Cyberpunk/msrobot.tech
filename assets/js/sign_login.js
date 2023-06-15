@@ -25,17 +25,19 @@ login_a.onclick = () =>{
     backgr.classList.add("opacity");
 }
 
+// ask_login.onclick = () =>{
+//     wapper_sign.classList.add("active");
+//     wapper_login.classList.remove("active");
+//     backgr.classList.add("opacity");
+// }
+
 sign_a.onclick = () =>{
     wapper_sign.classList.add("active");
     wapper_login.classList.remove("active");
     backgr.classList.add("opacity");
 }
 
-ask_login.onclick = () =>{
-    wapper_sign.classList.add("active");
-    wapper_login.classList.remove("active");
-    backgr.classList.add("opacity");
-}
+
 
 
 

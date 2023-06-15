@@ -74,7 +74,6 @@ body{
     justify-content: space-around;
 }
 
-
 .container_icon{
     margin-left: 1rem;
     padding: 0.8rem 0 0.5rem 0;
@@ -180,12 +179,10 @@ input[type="radio"] {
     height: 4rem;
     border: none;
     font-size: 1.5rem;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, color 0.3s ease-in-out;
     border-radius: 5px;
 }
 .comment > #btn_feedback:hover{
     cursor: pointer;
-    background-color: var(--bg-color);
-    border: solid var(--item-color) 3px;
-    color: var(--item-color);
+    opacity: 0.6;
 }

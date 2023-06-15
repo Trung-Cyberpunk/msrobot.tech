@@ -125,6 +125,47 @@ body{
     width: 100%;
     align-items: center;
 }
+
+
+/* account */
+
+#nav .account{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.account img{
+    width: 3rem;
+    height: auto;
+}
+.account .account_name{
+    margin-left: 1rem;
+}
+
+.account_name h3{
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.account_name span{
+    font-size: 1.3rem;
+    font-family: 500;
+    color: var(--item-color);
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.account_name span:hover{
+    opacity: 0.8;
+}
+
+
+
+
 /* insite */
 .item-header #demo_sites{
     position: relative;

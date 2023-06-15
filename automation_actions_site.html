@@ -53,7 +53,7 @@
                             <li id="item-header_insite"><a href="basic_site_login.html">Basic Site</a></li>
                             <li id="item-header_insite"><a href="automation_practice_site_login.html">Automation Practice Site</a></li>
                             <li id="item-header_insite"><a href="automation_actions_site_login.html">Automation Actions Site</a></li>
-                            <li id="item-header_insite"><a href="#">Ecommerce Site</a></li>
+                            <li id="item-header_insite"><a href="ecommerce_site_login.html">Ecommerce Site</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -78,8 +78,8 @@
 
         <div class="automation_actions">
             <div class="btn_actions">
-                <button class="btn-y"id="btn-bgr">Portlets</button>
-                <button class="btn-y">Multiple Lists</button>
+                <button class="btn-y">Portlets</button>
+                <button class="btn-y"id="btn-bgr">Multiple Lists</button>
                 <button class="btn-y">Simple List</button>
                 <button class="btn-y">Grid Sorting</button>
                 <button class="btn-y">Accepted Elements</button>
@@ -161,57 +161,83 @@
                         <div id="item-bc">
 
                         </div>
-                        <div id="item-bc">
-
-                        </div>
-                        <div id="item-bc">
-
-                        </div>
+                        
 
 
                     </div>
                 </div>
                 <!-- item-2 -->
-                <div class="container_action">
+                <div class="container_action" id="container_block">
                     <div class="notify">
-                        <div class="title-notify">Re-Order Elements provided. For Ex : Move Car to Motobike place</div>
+                        <div class="title-notify">Re-Order elements of the list from Object 1 to 7</div>
                         <button id="x_action" class="bx bx-x"></button>
                     </div>
-                    <div class="box-action">
-    
+                    <div class="container_object">
+                        <button class="obj_number">Object 1</button>
+                        <button class="obj_number">Object 2</button>
+                        <button class="obj_number">Object 3</button>
+                        <button class="obj_number">Object 4</button>
+                        <button class="obj_number">Object 5</button>
+                        <button class="obj_number">Object 6</button>
+                        <button class="obj_number">Object 7</button>
                     </div>
                 </div>
-                <!-- item-3 -->
+                <!-- item 3 -->
                 <div class="container_action">
                     <div class="notify">
-                        <div class="title-notify">Re-Order Elements provided. For Ex : Move Car to Motobike place</div>
+                        <div class="title-notify">Re-Order elements of both the lists and swap them if needed</div>
                         <button id="x_action" class="bx bx-x"></button>
                     </div>
-                    <div class="box-action">
-    
+                    <div class="container_object_2">
+                        <div class="object_1">
+                            <button class="obj-item">Object 1</button>
+                            <button class="obj-item">Object 2</button>
+                            <button class="obj-item">Object 3</button>
+                            <button class="obj-item">Object 4</button>
+                            <button class="obj-item">Object 5</button>
+                        </div>
+                        <div class="object_2">
+                            <button class="obj-item">Object 1</button>
+                            <button class="obj-item">Object 2</button>
+                            <button class="obj-item">Object 3</button>
+                            <button class="obj-item">Object 4</button>
+                            <button class="obj-item">Object 5</button>
+                        </div>
                     </div>
                 </div>
-                <!-- item-4 -->
+                <!-- item 4 -->
+                <div class="container_action"> 
+                    <div class="notify">
+                        <div class="title-notify">Re-Order elements of both the lists and swap them if needed</div>
+                        <button id="x_action" class="bx bx-x"></button>
+                    </div>
+                    <div class="alphabet">
+                        <span class="alphabet_item">A</span>
+                        <span class="alphabet_item">B</span>
+                        <span class="alphabet_item">C</span>
+                        <span class="alphabet_item">D</span>
+                        <span class="alphabet_item">E</span>
+                        <span class="alphabet_item">F</span>
+                        <span class="alphabet_item">G</span>
+                        <span class="alphabet_item">H</span>
+                        <span class="alphabet_item">I</span>
+                        <span class="alphabet_item">J</span>
+                        <span class="alphabet_item">K</span>
+                        <span class="alphabet_item">L</span>
+                    </div>
+                </div>
+                <!-- item 5 -->
                 <div class="container_action">
                     <div class="notify">
-                        <div class="title-notify">Re-Order Elements provided. For Ex : Move Car to Motobike place</div>
+                        <div class="title-notify">Specify using the “accept” option which element (or group of elements) is accepted by the target droppable.</div>
                         <button id="x_action" class="bx bx-x"></button>
                     </div>
-                    <div class="box-action">
-    
+                    <div class="accept">
+                        <span>I'm draggable but can't be dropped</span>
+                        <span>Drag me to my target</span>
+                        <span>Drag me to my target</span>
                     </div>
                 </div>
-                <!-- item-5 -->
-                <div class="container_action">
-                    <div class="notify">
-                        <div class="title-notify">Re-Order Elements provided. For Ex : Move Car to Motobike place</div>
-                        <button id="x_action" class="bx bx-x"></button>
-                    </div>
-                    <div class="box-action">
-    
-                    </div>
-                </div>
-
             </div>
             
         </div>
@@ -392,6 +418,7 @@
     <script src="/msrobot.tech/assets/js/forum.js"></script>
     <script src="assets/js/droop_qs.js"></script>
     <script src="/msrobot.tech/assets/js/sign_box.js"></script>
+    <script src="/msrobot.tech/assets/js/actions_stie.js"></script>
     <!-- thư viện Sortable kéo thả -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.13.0/Sortable.min.js"></script>
 
@@ -400,6 +427,18 @@
         new Sortable(document.querySelector('.box-action'), {
           animation: 150,
         });
+        new Sortable(document.querySelector('.container_object'), {
+            animation: 150,
+          });
+        new Sortable(document.querySelector('.object_1'), {
+            animation: 150,
+          });
+        new Sortable(document.querySelector('.object_2'), {
+            animation: 150,
+          });
+        new Sortable(document.querySelector('.alphabet  '), {
+            animation: 150,
+          });
       </script>
 </body>
 
