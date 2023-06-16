@@ -15,7 +15,10 @@ btn_y.forEach(function(button,index){
         container_action[index].setAttribute('id','container_block');
     })
 })  
+  
 
+
+// trung
 
 // Lấy tất cả các nút x_action
 const closeButtons = document.querySelectorAll("#x_action");
