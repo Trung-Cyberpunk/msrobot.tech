@@ -1,4 +1,5 @@
 const backgr = document.querySelector(".backgr");
+
 // sign
 const btn_signUp = document.querySelector("#btn-header_signUp");
 const wapper_sign = document.querySelector(".signUp");
