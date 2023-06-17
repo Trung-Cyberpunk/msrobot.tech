@@ -12,6 +12,7 @@ btn_y.forEach(function(button,index){
         container_action.forEach(function(box){
             box.removeAttribute('id')
         })
+        
         container_action[index].setAttribute('id','container_block');
     })
 })  
