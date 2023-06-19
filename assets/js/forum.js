@@ -17,4 +17,3 @@ remove_ask.onclick = () => {
     backgr.classList.remove("opacity");
 }
 
-

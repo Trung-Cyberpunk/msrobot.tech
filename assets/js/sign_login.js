@@ -26,11 +26,6 @@ login_a.onclick = () =>{
     backgr.classList.add("opacity");
 }
 
-ask_login.onclick = () =>{
-    wapper_sign.classList.add("active");
-    wapper_login.classList.remove("active");
-    backgr.classList.add("opacity");
-}
 
 sign_a.onclick = () =>{
     wapper_sign.classList.add("active");
@@ -103,4 +98,12 @@ btn_reset.onclick = () =>{
 btn_z_2.onclick = () => {
     reset_pw_2.classList.remove("active");  
     backgr.classList.remove("opacity");
+}
+
+// sign page item
+
+ask_login.onclick = () =>{
+    wapper_sign.classList.add("active");
+    wapper_login.classList.remove("active");
+    backgr.classList.add("opacity");
 }
